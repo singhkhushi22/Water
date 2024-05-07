@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('waterbackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            background-color: aquamarine;
+            width: 600px;
+            height: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            display: block;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Water Marvels  <br> "Fair Drops For All"</h1>
+        
+        <button class="btn"onclick="openUserPage()">Society</button>
+
+    
+    <button class="btn" onclick="openAdminPage()">Administrator</button>
+    </div>
+    <script>
+        
+        function openUserPage() {
+            window.location.href = "user.html";
+        }
+
+        
+        function openAdminPage() {
+            window.location.href = "admin.html";
+        }
+    </script>
+</body>
+</html>
